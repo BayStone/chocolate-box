@@ -1,0 +1,3 @@
+<title>Camera and Keyboard</title>
+
+You can also use the keyboard to control the camera. WASD is for moving, arrow keys are for looking.

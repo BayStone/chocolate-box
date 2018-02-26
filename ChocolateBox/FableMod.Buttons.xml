@@ -1,0 +1,30 @@
+<!-- Button Configuration -->
+    
+<buttonconfiguration>
+    <!--
+    <button name="CameraOrbit" value="MButton" />
+    <button name="CameraLook" value="Ctrl+MButton" />
+    <button name="CameraMove" value="Shift+MButton" />
+    
+    <button name="ViewFront" value="NumPad1" />
+    <button name="ViewTop" value="NumPad7" />
+    <button name="ViewSide" value="NumPad3" />
+   
+    <button name="ThingMove" value="LButton" />
+    <button name="ThingCopyMove" value="Ctrl+LButton" />
+    <button name="ThingRotate" value="RButton" />
+    <button name="ThingCopyRotate" value="Ctrl+RButton" />
+    
+    <button name="ThingSelect" value="LButton" />
+    <button name="ThingAddSelect" value="Ctrl+LButton" />
+    
+    <button name="ThingCollisions" value="Shift" />
+    <button name="ThingFocus" value="DLButton" />
+    
+    <button name="ThingCreate" value="LButton" />
+    
+    <button name="WalkDraw" value="LButton" />
+    <button name="WalkErase" value="Ctrl+RButton" />
+    -->
+    
+</buttonconfiguration>

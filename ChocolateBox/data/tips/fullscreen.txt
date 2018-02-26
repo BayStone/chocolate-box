@@ -1,0 +1,3 @@
+<title>Fullscreen Edit Mode</title>
+
+While in Region Editor, go to fullscreen mode with F11.

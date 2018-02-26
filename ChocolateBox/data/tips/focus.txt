@@ -1,0 +1,3 @@
+<title>Focus</title>
+
+Double clicking an object in Region Editor will focus the camera on the object for closer inspection.

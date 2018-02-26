@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EDDB0F3-CB8F-45C3-9F23-ACF92D3E921D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChocolateBox</RootNamespace>
+    <AssemblyName>ChocolateBox</AssemblyName>
+    <ApplicationIcon>Resources\ChocolateBox.ico</ApplicationIcon>
+    <StartupObject>ChocolateBox.Program</StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\Debug\ChocolateBox.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\Release\ChocolateBox.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\Debug\ChocolateBox.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\Release\ChocolateBox.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BIGFileController.cs" />
+    <Compile Include="BINDumber.cs" />
+    <Compile Include="BINFileController.cs" />
+    <Compile Include="FileController.cs" />
+    <Compile Include="FileDatabase.cs" />
+    <Compile Include="FileInterface.cs" />
+    <Compile Include="FileProcessor.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDayTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDayTip.Designer.cs">
+      <DependentUpon>FormDayTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditor.Designer.cs">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNamesBIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNamesBIN.Designer.cs">
+      <DependentUpon>FormNamesBIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormObjectBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormObjectBuilder.Designer.cs">
+      <DependentUpon>FormObjectBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModPackage.Designer.cs">
+      <DependentUpon>FormModPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegionSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegionSelect.Designer.cs">
+      <DependentUpon>FormRegionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectBIGEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectBIGEntry.Designer.cs">
+      <DependentUpon>FormSelectBIGEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectBINEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectBINEntry.Designer.cs">
+      <DependentUpon>FormSelectBINEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectEntry.Designer.cs">
+      <DependentUpon>FormSelectEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewBIGEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewBIGEntry.designer.cs">
+      <DependentUpon>FormNewBIGEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGameBINEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGameBINEntry.designer.cs">
+      <DependentUpon>FormNewGameBINEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectNamesEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectNamesEntry.Designer.cs">
+      <DependentUpon>FormSelectNamesEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTextureBIG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTextureBIG.Designer.cs">
+      <DependentUpon>FormTextureBIG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetModifiedProcessor.cs" />
+    <Compile Include="IniFile.cs" />
+    <Compile Include="MapSaveProcessor.cs" />
+    <Compile Include="ModEnvironmentManager.cs" />
+    <Compile Include="RegionLoader.cs" />
+    <Compile Include="Processor.cs" />
+    <Compile Include="FormBIG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBIG.Designer.cs">
+      <DependentUpon>FormBIG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBIN.Designer.cs">
+      <DependentUpon>FormBIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFileController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileController.Designer.cs">
+      <DependentUpon>FormFileController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFind.Designer.cs">
+      <DependentUpon>FormFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcess.Designer.cs">
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTreeFileController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTreeFileController.Designer.cs">
+      <DependentUpon>FormTreeFileController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBBB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBBB.Designer.cs">
+      <DependentUpon>FormBBB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NamesBINController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Progress.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBIG.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBIG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBIN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDayTip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDayTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFileController.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFileController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFind.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNamesBIN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormNamesBIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormObjectBuilder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormObjectBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModPackage.resx">
+      <DependentUpon>FormModPackage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegionSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRegionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectBINEntry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectBINEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectEntry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTextureBIG.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTextureBIG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTreeFileController.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTreeFileController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBBB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBBB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewBIGEntry.resx">
+      <DependentUpon>FormNewBIGEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGameBINEntry.resx">
+      <DependentUpon>FormNewGameBINEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ChocolateBox.INI">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FableMod.Gfx.INI">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="fablemod_ink.vsh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="BBBExtractor.cs" />
+    <Compile Include="BBBFileController.cs" />
+    <Compile Include="UIDCheckProcessor.cs" />
+    <Compile Include="UIDDatabaseProcessor.cs" />
+    <Compile Include="WLDFileController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChocolateBox.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\icons\bank.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\icons\definitiontype.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\icons\object.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\icons\objectpart.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\loading\loading01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\loading\loading02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\loading\loading03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\loading\loading04.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\collision.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\tips\rotation.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\fabletlcmod.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\tips\lhbb.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\tips.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\ini.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\find.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\fullscreen.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\loading\loading05.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\delete.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\tips\focus.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\camera.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\tips\camkeys.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\def.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\def.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\startup.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\tngdefinitions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FableMod.BBB\FableMod.BBB.vcxproj">
+      <Project>{0B906398-AC90-40B8-B453-EE5C66D91712}</Project>
+      <Name>FableMod.BBB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.BIG\FableMod.BIG.vcxproj">
+      <Project>{BBAFE9BA-2D29-49D9-9A15-F3CB040A849C}</Project>
+      <Name>FableMod.BIG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.BIN\FableMod.BIN.vcxproj">
+      <Project>{57EF8482-CD6C-4ADC-A444-F8B73ABB582D}</Project>
+      <Name>FableMod.BIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.CLRCore\FableMod.CLRCore.vcxproj">
+      <Project>{ADE13B3E-5287-4878-B197-8E75A68CCEC0}</Project>
+      <Name>FableMod.CLRCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Content.Forms\FableMod.Content.Forms.csproj">
+      <Project>{C9A32CFF-3E9C-4481-9EA9-0D1FDB3DC88A}</Project>
+      <Name>FableMod.Content.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.ContentManagement\FableMod.ContentManagement.vcxproj">
+      <Project>{0EF2C498-F56B-4F47-9386-1814FE842886}</Project>
+      <Name>FableMod.ContentManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Data\FableMod.Data.vcxproj">
+      <Project>{C18DCE8C-7372-46BF-8A4B-5B9E05B795A3}</Project>
+      <Name>FableMod.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Forms\FableMod.Forms.csproj">
+      <Project>{56637B2C-DE0D-483D-9FFE-0BA5D98D0055}</Project>
+      <Name>FableMod.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Gfx.Integration\FableMod.Gfx.Integration.vcxproj">
+      <Project>{D18EA09F-ECC6-4482-8AF6-6E40398E5357}</Project>
+      <Name>FableMod.Gfx.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.LEV\FableMod.LEV.vcxproj">
+      <Project>{ECA52FC3-B9CB-4E04-8CEB-B0691F607D0D}</Project>
+      <Name>FableMod.LEV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Script\FableMod.Script.csproj">
+      <Project>{4A5A6AAB-B7FE-4AD0-9DB1-A2112AC134D2}</Project>
+      <Name>FableMod.Script</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.STB\FableMod.STB.vcxproj">
+      <Project>{E54A256F-C57F-48A7-B181-6C03CADD0307}</Project>
+      <Name>FableMod.STB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.TNG\FableMod.TNG.vcxproj">
+      <Project>{56C2E5DB-D84B-456C-A0F2-B1316D410B30}</Project>
+      <Name>FableMod.TNG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.WLD\FableMod.WLD.csproj">
+      <Project>{EF85F72C-231A-440B-AB8A-DB23921254D1}</Project>
+      <Name>FableMod.WLD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FableMod.Buttons.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

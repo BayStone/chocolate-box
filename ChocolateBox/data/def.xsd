@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsi="Fable" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="Fable" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="DefinitionListing">
+    <xsd:complexType>
+    	<xsd:sequence>
+        	<xsd:element name="ControlStructures" minOccurs="1" maxOccurs="1">
+          		<xsd:complexType>
+          			<xsd:sequence>
+	      		      <xsd:element name="Control" minOccurs="1" maxOccurs="unbounded">
+		            		<xsd:complexType>
+		            			<xsd:sequence>
+		            				<xsd:choice minOccurs="1" maxOccurs="unbounded">
+		            					<xsd:element name="Member" type="xsi:MemberType" />
+										      <xsd:element name="Array" type="xsi:ArrayType" />
+									      </xsd:choice>
+	      		    			</xsd:sequence>
+								      <xsd:attribute name="name" type="xsd:string" use="required" />
+                  		<xsd:attribute name="id" type="xsi:IdentifierType" use="required" />
+                  	</xsd:complexType>
+		        		  </xsd:element>
+		            </xsd:sequence>
+              </xsd:complexType>
+			    </xsd:element>
+        
+        	<xsd:element name="DefinitionTypes" minOccurs="1" maxOccurs="1">
+          		<xsd:complexType>
+          			<xsd:sequence>
+		          		<xsd:element name="DefinitionType" minOccurs="1" maxOccurs="unbounded">
+	                		<xsd:complexType>
+	                			<xsd:sequence>
+		                			<xsd:element name="ControlInstance" minOccurs="1" maxOccurs="unbounded">
+		                      			<xsd:complexType>
+		                        			<xsd:attribute name="id" type="xsi:IdentifierType" use="optional" />
+		                        			<xsd:attribute name="name" type="xsd:string" use="optional" />
+		                     			</xsd:complexType>
+		                    		</xsd:element>
+		                  		</xsd:sequence>
+	                  			<xsd:attribute name="name" type="xsd:string" use="required" />
+	                  			<xsd:attribute name="hasCDefListing" type="xsd:boolean" use="required" />
+	                		</xsd:complexType>
+	              		</xsd:element>
+		           	</xsd:sequence>
+              	</xsd:complexType>
+        	</xsd:element>
+    	</xsd:sequence>
+     	<xsd:attribute ref="xsi:noNamespaceSchemaLocation" use="required" />
+    </xsd:complexType>
+</xsd:element>
+
+<xsd:complexType name="LinkType">
+	<xsd:attribute name="to" type="xsi:LinkAttrType" use="required" />
+	<xsd:attribute name="restriction" type="xsi:LinkRestrictionType" use="optional" />
+</xsd:complexType>
+		
+<xsd:simpleType name="IdentifierType">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="(\d|[a-f]|[A-F]){8}" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="LinkRestrictionType">
+	<xsd:restriction base="xsd:string">
+		<!--
+			TODO
+		-->
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="ArrayType">
+	<xsd:sequence>
+    <xsd:sequence>
+      <xsd:choice minOccurs="1" maxOccurs="unbounded">
+        <xsd:element name="Member" type="xsi:MemberType" />
+        <xsd:element name="Array" type="xsi:ArrayType" />
+      </xsd:choice>
+    </xsd:sequence>
+	</xsd:sequence>
+	<xsd:attribute name="name" type="xsd:string" use="required" />
+	<xsd:attribute name="elementcount" type="xsd:string" use="required" />
+	<xsd:attribute name="comments" type="xsd:string" use="optional" />
+</xsd:complexType>
+			
+<xsd:complexType name="MemberType">
+	<xsd:sequence>
+		<xsd:element name="Link" type="xsi:LinkType" minOccurs="0" maxOccurs="1" />
+	</xsd:sequence>
+	<xsd:attribute name="name" type="xsd:string" use="required" />
+	<xsd:attribute name="type" type="xsi:DataType" use="required" />
+	<xsd:attribute name="comments" type="xsd:string" use="optional" />
+</xsd:complexType>
+
+<xsd:simpleType name="LinkAttrType">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="ModelID"/>
+		<xsd:enumeration value="AnimationID"/>
+		<xsd:enumeration value="NamesBINOffset"/>
+		<xsd:enumeration value="NamesBINEnum"/>
+		<xsd:enumeration value="NamesBINName"/>
+    <xsd:enumeration value="GameBINEntryID"/>
+    <xsd:enumeration value="ScriptBINEntryID"/>
+    <xsd:enumeration value="FrontEndBINEntryID"/>
+		<xsd:enumeration value="EffectID"/>
+    <xsd:enumeration value="MainTextureID"/>
+    <xsd:enumeration value="GUITextureID"/>
+    <xsd:enumeration value="FrontEndTextureID"/>
+		<xsd:enumeration value="ParticleID"/>
+		<xsd:enumeration value="TextID"/>
+		<xsd:enumeration value="TextGroupID"/>
+		<xsd:enumeration value="ShaderID"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="DataType">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="int"/>
+		<xsd:enumeration value="uint"/>
+		<xsd:enumeration value="short"/>
+		<xsd:enumeration value="ushort"/>
+		<xsd:enumeration value="char"/>
+		<xsd:enumeration value="byte"/>
+		<xsd:enumeration value="string"/>
+		<xsd:enumeration value="float"/>
+		<xsd:enumeration value="double"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:attribute name="noNamespaceSchemaLocation" type="xsd:string" />
+
+</xsd:schema>

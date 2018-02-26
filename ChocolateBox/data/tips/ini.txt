@@ -1,0 +1,3 @@
+<title>ChocolateBox.INI</title>
+
+You can change a lot of things from ChocolateBox.ini. To read the file just open it on Notepad and check it out.

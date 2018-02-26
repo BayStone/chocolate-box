@@ -1,0 +1,7 @@
+<title>Camera</title>
+
+In the Region Editor you can click the middle mouse button (MMB) and move the mouse to move the camera in the three dimensions. 
+
+If you hold the 'Ctrl' key when you have the MMB down and move the mouse, instead of moving the camera, you move the camera focus point. This is the look mode.
+
+Use the mouse scroll to zoom.

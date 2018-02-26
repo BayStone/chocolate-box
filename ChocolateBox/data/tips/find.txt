@@ -1,0 +1,3 @@
+<title>Finding Objects</title>
+
+Finding objects in BINs and BIGs can be a tricky thing. You can find the tools for locating objects in the Edit menu, but make sure you learn how to use regular expressions. It'll make things a lot easier. Internet is your friend.

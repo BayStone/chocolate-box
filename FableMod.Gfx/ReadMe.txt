@@ -1,0 +1,1 @@
+Graphics engine static library, used with the intergration dll.

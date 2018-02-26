@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9A32CFF-3E9C-4481-9EA9-0D1FDB3DC88A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FableMod.Content.Forms</RootNamespace>
+    <AssemblyName>FableMod.Content.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>Debug\FableMod.Content.Forms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>Release\FableMod.Content.Forms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>Debug\FableMod.Content.Forms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>Release\FableMod.Content.Forms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlComplexBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlComplexBlock.Designer.cs">
+      <DependentUpon>ControlComplexBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPhysicsModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlPhysicsModel.Designer.cs">
+      <DependentUpon>ControlPhysicsModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlThing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlThing.Designer.cs">
+      <DependentUpon>ControlThing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlThingVariable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlThingVariable.Designer.cs">
+      <DependentUpon>ControlThingVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTNGElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTNGElement.Designer.cs">
+      <DependentUpon>ControlTNGElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlElementArray.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlElementArray.Designer.cs">
+      <DependentUpon>ControlElementArray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBINEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBINEntry.designer.cs">
+      <DependentUpon>FormBINEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCutscene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCutscene.Designer.cs">
+      <DependentUpon>FormCutscene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBIGEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpenTexture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ControlBIGEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTexture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTextGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlComplexBlock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlComplexBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlPhysicsModel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPhysicsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlThing.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlThing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlThingVariable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlThingVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlElementArray.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlElementArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBINEntry.resx">
+      <DependentUpon>FormBINEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCutscene.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCutscene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataViewer.resx">
+      <DependentUpon>FormDataViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBIGEntry.resx">
+      <DependentUpon>FormBIGEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlBIGEntry.resx">
+      <DependentUpon>ControlBIGEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTexture.resx">
+      <DependentUpon>ControlTexture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlModel.resx">
+      <DependentUpon>ControlModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpenTexture.resx">
+      <DependentUpon>FormOpenTexture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlText.resx">
+      <DependentUpon>ControlText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTextGroup.resx">
+      <DependentUpon>ControlTextGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FableMod.BIG\FableMod.BIG.vcxproj">
+      <Project>{BBAFE9BA-2D29-49D9-9A15-F3CB040A849C}</Project>
+      <Name>FableMod.BIG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.BIN\FableMod.BIN.vcxproj">
+      <Project>{57EF8482-CD6C-4ADC-A444-F8B73ABB582D}</Project>
+      <Name>FableMod.BIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.CLRCore\FableMod.CLRCore.vcxproj">
+      <Project>{ADE13B3E-5287-4878-B197-8E75A68CCEC0}</Project>
+      <Name>FableMod.CLRCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.ContentManagement\FableMod.ContentManagement.vcxproj">
+      <Project>{0EF2C498-F56B-4F47-9386-1814FE842886}</Project>
+      <Name>FableMod.ContentManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Data\FableMod.Data.vcxproj">
+      <Project>{C18DCE8C-7372-46BF-8A4B-5B9E05B795A3}</Project>
+      <Name>FableMod.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Forms\FableMod.Forms.csproj">
+      <Project>{56637B2C-DE0D-483D-9FFE-0BA5D98D0055}</Project>
+      <Name>FableMod.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.Gfx.Integration\FableMod.Gfx.Integration.vcxproj">
+      <Project>{D18EA09F-ECC6-4482-8AF6-6E40398E5357}</Project>
+      <Name>FableMod.Gfx.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FableMod.TNG\FableMod.TNG.vcxproj">
+      <Project>{56C2E5DB-D84B-456C-A0F2-B1316D410B30}</Project>
+      <Name>FableMod.TNG</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

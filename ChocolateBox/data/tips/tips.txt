@@ -1,0 +1,5 @@
+<title>Tips of the Day</title>
+
+If you want to help out the community and you know some cool tricks that you can do in CBox, please go ahead and write some custom tips for the day. Just create a text file and share them with others.
+
+All you have to do is place them on the CBox's data\tips subfolder.

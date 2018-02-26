@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tngdefinitions>
+	<ctc name="CTCPhysicsStandard">
+		<variable name="PositionX" type="Float" value="0.0" />
+		<variable name="PositionY" type="Float" value="0.0" />
+		<variable name="PositionZ" type="Float" value="0.0" />
+		<variable name="RHSetForwardX" type="Float" value="0.0" />
+		<variable name="RHSetForwardY" type="Float" value="1.0" />
+		<variable name="RHSetForwardZ" type="Float" value="0.0" />
+		<variable name="RHSetUpX" type="Float" value="0.0" />
+		<variable name="RHSetUpY" type="Float" value="0.0" />
+		<variable name="RHSetUpZ" type="Float" value="1.0" />
+	</ctc>
+	<ctc name="CTCEditor" savedefault="FALSE">
+		<variable name="LockedInPlace" type="Boolean" value="FALSE" />
+		<variable name="AttachToGround" type="Boolean" value="FALSE" />
+		<variable name="Freezed" type="Boolean" value="FALSE" />
+	</ctc>
+	<array name="HusbandAppearances">
+		<variable name="BooleanHusbandAppearances[*]" type="Boolean" value="FALSE" />
+	</array>
+	<array name="CreateTC">
+		<variable name="CreateTC" type="QuoteString" value="" savedefault="FALSE" />
+	</array>
+	<array name="ContainerContents">
+		<variable name="ContainerContents[*]" type="GameEnum" value="NULL" />
+	</array>
+	<ctc name="CTCChest">
+		<arrayref name="ContainerContents" />
+		<variable name="ChestOpen" type="Boolean" value="FALSE" />
+	</ctc>
+	<ctc name="CTCWife" savedefault="FALSE">
+		<variable name="DivorcedHero" type="Boolean" value="FALSE" />
+		<variable name="JustMarried" type="Boolean" value="FALSE" />
+		<variable name="NeedsToChangeBrain" type="Boolean" value="FALSE" />
+		<arrayref name="HusbandAppearances" />
+		<variable name="CourtingBlocked" type="Boolean" value="FALSE" />
+		<variable name="PermittedToRegionFollow" type="Boolean" value="FALSE" />
+		<variable name="FrameGotMarriedToThePlayer" type="Integer" value="2147483647" />
+		<variable name="FrameToCheckAppearanceChanges" type="Integer" value="0" />
+		<variable name="FrameLastAwareOfHusband" type="Integer" value="0" />
+		<variable name="FrameLastReducedOpinion" type="Integer" value="0" />
+		<variable name="FrameLastEvaluatedGiftOpinion" type="Integer" value="0" />
+		<variable name="FrameLastConsideredGivingGift" type="Integer" value="0" />
+		<variable name="FrameLastEvaluatedLoveAttitude" type="Integer" value="0" />
+		<variable name="FrameEnteredAttitudeHate" type="Integer" value="2147483647" />
+		<variable name="FrameLastGaveDivorceWarning" type="Integer" value="0" />
+		<variable name="FrameEnteredLoveWithHusbandPresentAtHome" type="Integer" value="2147483647" />
+		<variable name="FrameLastGaveSexOffer" type="Integer" value="0" />
+		<variable name="GiftGivingOpinionDistanceFromMax" type="Float" value="0.0" />
+		<variable name="GiftGivingPriceValue" type="Integer" value="500" />
+		<variable name="GiftToGiveDef" type="Integer" value="0" />
+		<variable name="LastFatnessChangePoint" type="Float" value="0.0" />
+		<variable name="HouseDressingLevelLastCommentedOn" type="Integer" value="0" />
+		<variable name="FrameLastReceivedNiceGift" type="Integer" value="0" />
+		<variable name="FrameLastCulledGiftsReceived" type="Integer" value="165" />
+		<variable name="LoveAttitudeValue" type="Float" value="0.0" />
+		<variable name="HasBeenInLoveWithPlayer" type="Boolean" value="FALSE" />		
+		<variable name="ReceivedWeddingRing" type="Boolean" value="FALSE" />
+	</ctc>
+	<ctc name="CTCBuyableHouse" savedefault="FALSE">
+		<variable name="WifeLivingHere" type="Integer" value="0" />
+		<variable name="OwnedByPlayer" type="Boolean" value="FALSE" />
+		<variable name="IsScripted" type="Boolean" value="FALSE" />
+		<variable name="DayNextRentIsDue" type="Integer" value="2147483647" />
+		<variable name="CurrentDressLevel" type="Integer" value="0" />
+		<variable name="VirtualMoneyBags" type="Integer" value="0" />
+		<variable name="IsResidential" type="Boolean" value="FALSE" />
+		<variable name="Rented" type="Boolean" value="FALSE" />
+	</ctc>
+	<ctc name="CTCOwnedEntity" savedefault="FALSE">
+		<variable name="SwitchableNavigationTCAdded" type="Boolean" value="FALSE" />
+		<variable name="VersionNumber" type="Integer" value="1" />
+		<variable name="OwnerUID" type="UID" value="0" />
+	</ctc>
+	<ctc name="CTCTargeted" savedefault="FALSE">
+		<variable name="Targetable" type="Boolean" value="FALSE" />
+	</ctc>
+	<ctc name="CTCActionUseReadable" savedefault="FALSE">
+		<variable name="GameTextDefName" type="GameEnum" value="" />
+	</ctc>
+	<ctc name="CTCActionUseScriptedHook" savedefault="FALSE">
+		<variable name="Usable" type="Boolean" value="FALSE" />
+		<variable name="ReversedOnMiniMap" type="Boolean" value="FALSE" />
+		<variable name="HiddenOnMiniMap" type="Boolean" value="FALSE" />
+		<variable name="VersionNumber" type="Integer" value="1" />
+		<variable name="ForceConfirmation" type="Boolean" value="FALSE" />
+		<variable name="TeleportToRegionEntrance" type="Boolean" value="FALSE" />
+		<variable name="EntranceConnectedToUID" type="UID" value="0" />
+		<variable name="CameraTrackUID" type="UID" value="0" />
+		<variable name="SoundName" type="GameEnum" value="" />
+		<variable name="AnimationName" type="GameEnum" value="" />
+		<variable name="ReplacementObject" type="Integer" value="0" />
+	</ctc>
+	<ctc name="CTCTalk" savedefault="FALSE">
+	</ctc>
+	<ctc name="CTCContainerRewardHero" savedefault="FALSE">
+		<arrayref name="ContainerContents" />
+	</ctc>
+	<ctc name="CTCVillageMember" savedefault="FALSE">
+		<variable name="VillageUID" type="UID" value="0" />
+	</ctc>
+	<ctc name="CTCRandomAppearanceMorph" savedefault="FALSE">
+		<variable name="Seed" type="Integer" value="0" />
+	</ctc>
+	<ctc name="CTCGraphicAppearance" savedefault="FALSE">
+	</ctc>
+	<ctc name="CTCEnemy" savedefault="FALSE">
+		<variable name="FriendsWithEverythingFlag" type="Boolean" value="FALSE" />
+		<variable name="EnableFollowersEnemyProxy" type="Boolean" value="FALSE" />
+		<variable name="FactionName" type="QuoteString" value="" />
+	</ctc>
+	<ctc name="CTCLight">
+		<variable name="Active" type="Boolean" value="FALSE" />
+		<variable name="Overridden" type="Boolean" value="FALSE" />
+		<variable name="Colour" type="String" value="CRGBColour(255,255,255,255)" />
+		<variable name="InnerRadius" type="Float" value="0.0" />
+		<variable name="OuterRadius" type="Float" value="0.0" />
+		<variable name="Interted" type="Boolean" value="FALSE" />
+	</ctc>
+	<ctc name="CTCDRegionExit">
+		<variable name="Active" type="Boolean" value="FALSE" />
+		<variable name="Radius" type="Float" value="0.0" />
+		<variable name="MessageRadius" type="Float" value="0.0" />
+		<variable name="ReversedOnMiniMap" type="Boolean" value="FALSE" />
+		<variable name="HiddenOnMiniMap" type="Boolean" value="FALSE" />
+		<variable name="EntranceConnectedToUID" type="UID" value="0" />
+	</ctc>
+	<ctc name="CTCDRegionEntrance">
+	</ctc>
+	<ctc name="CTCCameraBase">
+		<variable name="CutInto" type="Boolean" value="FALSE" />
+		<variable name="CutOutOf" type="Boolean" value="FALSE" />
+		<variable name="TestAngleBeforeActivation" type="Boolean" value="FALSE" />
+		<variable name="SelfTerminate" type="Boolean" value="FALSE" />
+		<variable name="HeroIsSubject" type="Boolean" value="FALSE" />
+		<variable name="FOV" type="Float" value="0.25" />
+		<variable name="IsCoordBaseRelativeToParent" type="Boolean" value="TRUE" />
+		<variable name="CoordBase" type="String" value="C3DCoordF(0.0,0.0,0.0)" />
+		<variable name="CoordAxisUp" type="String" value="C3DCoordF(0.0,0.0,1.0)" />
+		<variable name="CoordAxisFwd" type="String" value="C3DCoordF(1.0,0.0,0.0)" />
+		<variable name="UsingRelativeCoords" type="Boolean" value="FALSE" />
+		<variable name="UsingRelativeOrientation" type="Boolean" value="FALSE" />
+	</ctc>
+	<ctc name="CTCDiggingSpot">
+    <variable name="Hidden" type="Boolean" value="FALSE" />
+  </ctc>
+	<ctc name="CTCFishingSpot">
+  </ctc>
+	<ctc name="CTCShop">
+        <array name="StockItemDefsKeys">
+		    <variable name="StockItemDefsKeys[*]" type="GameEnum" value="NULL" />
+	    </array>
+        <array name="StockItemDefsQuantity">
+		    <variable name="StockItemDefsQuantity[*]" type="Float" value="0.0" />
+	    </array>
+        <array name="StockItemDefsMaxStock">
+		    <variable name="StockItemDefsMaxStock[*]" type="Float" value="0.0" />
+	    </array>
+        <variable name="DayLastChecked" type="Integer" value="0" />
+    </ctc>
+    
+	<struct name="Vector">
+		<variable name="X" type="Float" value="0.0" />
+		<variable name="Y" type="Float" value="0.0" />
+		<variable name="Z" type="Float" value="0.0" />
+	</struct>
+	
+    <!-- DEFTYPES -->
+	
+	<deftype name="THING_BASE">
+		<variable name="ScriptName" type="String" value="NULL" />
+		<variable name="ScriptData" type="QuoteString" value="NULL" />
+		<variable name="ThingGamePersistent" type="Boolean" value="FALSE" />
+		<variable name="ThingLevelPersistent" type="Boolean" value="FALSE" />
+		<variable name="Health" type="Float" value="1.0" />
+		<variable name="ObjectScale" type="Float" value="1.0" />
+		<arrayref name="CreateTC" />
+		<ctcref name="CTCPhysicsStandard" />
+		<ctcref name="CTCEditor" />
+	</deftype>
+	<deftype name="HOLY_SITE" inherits="THING_BASE">
+	</deftype>
+	<deftype name="REGION_EXIT_POINT" graphic="MESH_MARKER_REGION_EXIT" inherits="THING_BASE">
+		<ctcref name="CTCDRegionExit" />
+	</deftype>
+	<deftype name="REGION_ENTRANCE_POINT" graphic="MESH_MARKER_REGION_ENTRANCE" inherits="THING_BASE">
+		<ctcref name="CTCDRegionEntrance" />
+	</deftype>
+	<deftype name="OBJECT" inherits="THING_BASE">
+		<ctcref name="CTCTargeted" />
+		<ctcref name="CTCActionUseReadable" />
+		<ctcref name="CTCActionUseScriptedHook" />
+		<ctcref name="CTCOwnedEntity" />
+	</deftype>
+	<deftype name="BUILDING" inherits="THING_BASE">
+		<ctcref name="CTCOwnedEntity" />
+		<ctcref name="CTCBuyableHouse" />
+        <ctcref name="CTCShop" />
+	</deftype>
+	<deftype name="CREATURE">
+		<variable name="ScriptName" type="String" value="NULL" />
+		<variable name="ScriptData" type="QuoteString" value="NULL" />
+		<variable name="ThingGamePersistent" type="Boolean" value="FALSE" />
+		<variable name="ThingLevelPersistent" type="Boolean" value="FALSE" />
+		<arrayref name="CreateTC" />
+		<variable name="Health" type="Float" value="1.0" />
+		<variable name="ObjectScale" type="Float" value="1.0" />
+		<variable name="OverridingBrainName" type="GameEnum" value="NULL" />
+		<variable name="HasInformation" type="Boolean" value="FALSE" />
+		<variable name="WanderWithInformation" type="Boolean" value="FALSE" />
+		<variable name="WaveWithInformation" type="Boolean" value="FALSE" />
+		<variable name="ContinueAIWithInformation" type="Boolean" value="FALSE" />
+		<variable name="RespondingToFollowAndWait" type="Boolean" value="FALSE" />
+		<variable name="CanBeMarried" type="Boolean" value="FALSE" />
+		<variable name="CanBeCourted" type="Boolean" value="FALSE" />
+		<variable name="AllowedToFollowHero" type="Boolean" value="FALSE" />
+		<variable name="InitialPosX" type="Float" value="0.0" />
+		<variable name="InitialPosY" type="Float" value="0.0" />
+		<variable name="InitialPosZ" type="Float" value="0.0" />
+		<variable name="EnableCreatureAutoPlacing" type="Boolean" value="FALSE" />
+		<variable name="RegionFollowingOverriddenFromScript" type="Boolean" value="FALSE" />
+		<variable name="HasRelationships" type="Boolean" value="FALSE" />
+		<variable name="HomeBuildingUID" type="UID" value="0" />
+		<variable name="WorkBuildingUID" type="UID" value="0" />
+		<variable name="FatherCreatureUID" type="UID" value="0" />
+		<variable name="MotherCreatureUID" type="UID" value="0" />
+		<variable name="SpouseCreatureUID" type="UID" value="0" />
+		<ctc name="CTCPhysicsNavigator" inherits="CTCPhysicsStandard" />
+		<ctcref name="CTCWife" />
+		<ctcref name="CTCEnemy" />
+		<ctcref name="CTCTargeted" />
+		<ctcref name="CTCTalk" />
+		<ctc name="CTCCreatureOpinionOfHero" savedefault="FALSE">
+			<variable name="InteractedFlag" type="Boolean" value="FALSE" />
+			<variable name="GreetedFlag" type="Boolean" value="FALSE" />
+			<variable name="LastOpinionReactionFrame" type="Integer" value="2147483647" />
+			<variable name="NumberOfTimesHit" type="Float" value="0.0" />
+			<variable name="ToleranceToBeingHitOverride" type="Float" value="0.0" />
+			<variable name="FrameToDecayNumberOfTimesHit" type="Integer" value="2147483647" />
+			<variable name="ForcedAttitude" type="Integer" value="18" />
+			<variable name="HeroOpinionEnemy" type="Boolean" value="FALSE" />
+		</ctc>
+		<ctcref name="CTCRandomAppearanceMorph" />
+		<ctcref name="CTCVillageMember" />
+		<ctcref name="CTCContainerRewardHero" />
+		<ctcref name="CTCGraphicAppearance" />
+		<ctcref name="CTCEditor" />
+	</deftype>
+    <deftype name="VILLAGE" inherits="THING_BASE">
+	</deftype>
+	<deftype name="MARKER_BASIC" graphic="MESH_MARKER_01" inherits="THING_BASE">
+	</deftype>
+	<deftype name="MARKER_CREATURE_GENERATOR" graphic="MESH_MARKER_CREATURE" inherits="THING_BASE">
+		<ctc name="CTCCreatureGenerator">
+			<array name="CreatureFamilies">
+				<variable name="CreatureFamilies[*]" type="GameEnum" value="NULL" />
+			</array>
+			<variable name="GenerationRadius" type="Float" value="0.0" />
+			<variable name="SelfTriggerRadius" type="Float" value="0.0" />
+			<variable name="SelfTrigger" type="Boolean" value="FALSE" />
+			<variable name="SelfTriggerResetInterval" type="Integer" value="0" />
+			<variable name="TriggerOnActivate" type="Boolean" value="FALSE" />
+			<variable name="ActiveCreatureLimit" type="Integer" value="-1" />
+			<variable name="TotalGenerationLimit" type="Integer" value="-1" />
+			<variable name="NumTriggers" type="Integer" value="-1" />
+			<variable name="ScriptNameOfAllGeneratedCreatures" type="QuoteString" value="" />
+		</ctc>
+		<ctc name="CTCActivationReceptorCreatureGenerator">
+			<variable name="DeactivateAfterSetTime" type="Boolean" value="FALSE" />
+			<variable name="FramesAfterActivationToDeactivate" type="Integer" value="0" />
+			<variable name="ActivateOnActivate" type="Boolean" value="FALSE" />
+			<variable name="TriggerOnActivate" type="Boolean" value="FALSE" />
+		</ctc>
+		<ctc name="CTCActivationTrigger">
+			<variable name="ReceptorUID" type="UID" value="0" />
+		</ctc>
+		<ctc name="CTCCreatureGeneratorCreator">
+		</ctc>
+	</deftype>
+	<deftype name="MARKER_INFO_DISPLAY" graphic="MESH_MARKER_01" inherits="MARKER_BASIC">
+		<ctc name="CTCInfoDisplay">
+			<variable name="TextTag" type="GameEnum" value="" />
+			<variable name="TextTagBack" type="GameEnum" value="" />
+			<variable name="Radius" type="Float" value="1.0" />
+			<variable name="DisplayTime" type="Float" value="1.0" />
+		</ctc>
+	</deftype>
+	<deftype name="MARKER_LIGHT" graphic="" inherits="MARKER_BASIC">
+		<ctcref name="CTCLight" />
+	</deftype>
+	<deftype name="STORY_PLACE_MARKER" graphic="" inherits="MARKER_BASIC">
+		<ctcref name="CTCOwnedEntity" />
+	</deftype>
+    <!--
+    <deftype name="REGION_KICK_TO_POINT" graphic="MESH_GUILD_TELEPORT_01" inherits="MARKER_BASIC">
+	</deftype>
+    -->
+	<deftype name="CAMERA_POINT_SCRIPTED" graphic="" inherits="MARKER_BASIC">
+		<ctc name="StartCTCCameraPointScripted" inherits="CTCCameraBase">
+			<variable name="LookDirection.X" type="Float" value="0.0" />
+			<variable name="LookDirection.Y" type="Float" value="0.0" />
+			<variable name="LookDirection.Z" type="Float" value="0.0" />
+			<variable name="LookDirectionEnd.X" type="Float" value="0.0" />
+			<variable name="LookDirectionEnd.Y" type="Float" value="0.0" />
+			<variable name="LookDirectionEnd.Z" type="Float" value="0.0" />
+			<variable name="EndPos.X" type="Float" value="0.0" />
+			<variable name="EndPos.Y" type="Float" value="0.0" />
+			<variable name="EndPos.Z" type="Float" value="0.0" />
+			<variable name="TransitionTime" type="Float" value="0.0" />
+		</ctc>
+	</deftype>
+	<deftype name="CAMERA_POINT_SCRIPTED_SPLINE" graphic="" inherits="MARKER_BASIC">
+		<ctc name="StartCTCCameraPointScriptedSpline" inherits="CTCCameraBase">
+			<variable name="TimeToPlay" type="Float" value="1.0" />
+			<variable name="Tension" type="Float" value="0.8" />
+			<variable name="NumKeyCameras" type="Integer" value="0" />
+		</ctc>
+	</deftype>
+    <deftype name="MARKER_DIGGING_SPOT" graphic="MESH_DIGGING_SHOVEL" inherits="MARKER_BASIC">
+		<ctcref name="CTCDiggingSpot" />
+	</deftype>
+	<deftype name="MARKER_FISHING_SPOT" graphic="MESH_TROPHY_GOLDEN_FISH_01" inherits="MARKER_BASIC">
+		<ctcref name="CTCContainerRewardHero" />
+		<ctcref name="CTCFishingSpot" />
+	</deftype>
+  <deftype name="PARTICLE_EMITTER_PLACEABLE" graphic="MESH_MARKER_01" inherits="THING_BASE">
+	  <ctc name="CTCDParticleEmitter">
+      <variable name="IndependantObject" type="Boolean" value="TRUE" />
+		  <variable name="ParticleTypeName" type="GameEnum" value="" />
+    </ctc>
+	</deftype>
+</tngdefinitions>

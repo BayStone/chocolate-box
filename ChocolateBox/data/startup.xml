@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<files>
+	<file name="data\graphics\graphics.big" form="FALSE" />
+	<file name="data\graphics\pc\textures.big" form="FALSE" />
+	<file name="data\compileddefs\names.bin" form="FALSE" />
+	<file name="data\compileddefs\game.bin" form="FALSE" />
+  <file name="data\compileddefs\script.bin" form="FALSE" />
+  <file name="data\levels\finalalbion_rt.stb" form="FALSE" />
+</files>

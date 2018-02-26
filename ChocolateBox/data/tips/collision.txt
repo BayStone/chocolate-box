@@ -1,0 +1,3 @@
+<title>Collision Control</title>
+
+When you are moving an object you can control whether it can go through other objects or the terrain buy holding down the SHIFT button.
